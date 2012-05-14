@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus 
+{
+    outline: 0;
+}
+body 
+{
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul 
+{
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table 
+{
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td 
+{
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+    content: "";
+}
+blockquote, q 
+{
+    quotes: "" "";
+}
+#hide
+{
+    display: none;
+    position: relative;
+    top: -210px;
+    left: 205px;
+    float: left;
+}
+#hide input
+{
+    border-radius: 15px 5px 15px 5px;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    background-color: #F0F0F0;
+    width: 45px;
+    border: outset 1px #969696;
+    height:24px; 
+}
+#calculette
+{
+    border-radius: 30px 5px 30px 5px;
+    border: outset 1px #969696;
+    background: url("treillis2.jpg") no-repeat 46% 27%;
+    margin: 0 auto;
+    padding: 5px;
+    width: 206px;
+    height: 260px;
+}
+textarea
+{
+    background-color: #F0F0F0;
+    border-radius: 35px 5px 30px 5px;
+    text-align:right;
+    margin-left: 4px;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    width: 190px;
+    height: 43px;
+    border: outset 1px #969696;
+    resize: none;
+    font-size: 16px;
+    padding: 2px;
+}
+.bouton
+{
+    float:left;
+    padding:3px;
+}
+.bouton input
+{
+    background-color: #F0F0F0;
+    border: outset 1px #969696;
+    border-radius: 15px 5px 15px 5px;
+    height: 24px;
+    width: 45px;
+}
+#zero
+{
+    width:96px;
+}
+#egale
+{
+    height:54px;
+    position:relative;
+    bottom:30px;
+}
+.clear
+{
+    clear:both;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <title>Calculatrice</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" id="lien"/>
+    </head>
+    <body>
+        <div>
+            <button id="scient" onclick="cache(this.value);" value="true">scientifique</button>
+        </div>
+        <div>
+            <input id="grey" name="grey" type="button" value="Classic" onclick="cgrey();"/>
+            <input id="fun" name="fun" type="button" value="Disco" onclick="cfun();"/>
+            <input id="psg" name="psg" type="button" value="PSG" onclick="cpsg();"/>
+        </div>
+        <div id="calculette">
+            <form id="formul" method="post" action="" name="formul" >
+                <div class="affichage">
+                    <textarea id="aff" name="aff" class="text" rows="2" cols="21" readonly="readonly">0</textarea>
+                </div>
+                <div class="clear"></div>
+                <div class="bouton">
+                    <input id="mc" title="effacer la m&eacute;moire" name="mc" type="button" value="MC" onclick="mclean();"/>
+                </div>
+                <div class="bouton">
+                    <input id="mplus" title="Ajouter la valeur affich&eacute;e a la m&eacute;moire" name="mplus" type="button" value="M+" onclick="mp();"/>
+                </div>
+                <div class="bouton">
+                    <input id="mmoin" title="Soustraire la valeur affich&eacute;e a la m&eacute;moire" name="mmoin" type="button" value="M-" onclick="mmoins();"/>
+                </div>
+                <div class="bouton">
+                    <input id="mr" title="Rappeler la valeur en m&eacute;moire" name="mr" type="button" value="MR" onclick="mrecup();"/>
+                </div>
+                <div class="clear"></div>
+                <div class="bouton">
+                    <input id="clean" title="Effacer" name="clean" type="button" value="C" onclick="reset();"/>
+                </div>
+                <div class="bouton">
+                    <input id="plusmn" title="Inverser la valeur afficher" name="plusmn" type="button" value="&plusmn;" onclick="plmn();"/>
+                </div>
+                <div class="bouton">
+                    <input id="divise" name="diviser" type="button" value="/" onclick="operator(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="multiplier" name="multiplier" type="button" value="*" onclick="operator(this.value);"/>
+                </div>
+                <div class="clear"></div>
+                <div class="bouton">
+                    <input id="sept" name="sept" type="button" value="7" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="huit" name="huit" type="button" value="8" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="neuf" name="neuf" type="button" value="9" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="moins" name="moins" type="button" value="-" onclick="operator(this.value);"/>
+                </div>
+                <div class="clear"></div>
+                <div class="bouton">
+                    <input id="quatre" name="quatre" type="button" value="4" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="cinq" name="cinq" type="button" value="5" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="six" name="six" type="button" value="6" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="plus" name="plus" type="button" value="+" onclick="operator(this.value);"/>
+                </div>
+                <div class="clear"></div>
+                <div class="bouton">
+                    <input id="un" name="un" type="button" value="1" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="deux" name="deux" type="button" value="2" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="trois" name="trois" type="button" value="3" onclick="display(this.value);"/>
+                </div>
+                <div class="clear"></div>
+                <div class="bouton">
+                    <input id="zero" name="zero" type="button" value="0" onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="point" name="point" type="button" value="." onclick="display(this.value);"/>
+                </div>
+                <div class="bouton">
+                    <input id="egale" name="egale" type="button" value="=" onclick="calcul(this.value);"/>
+                </div>
+                <div id="hide">
+                    <input id="log" title="Calculer le logarithme de la valeur affich&eacute;e" name="log" type="button" value="log" onclick="loga();" />
+                    <input id="paro" name="paro" type="button" value="(" onclick="parento();" />
+                    <input id="parf" name="parf" type="button" value=")" onclick="parentf();" />
+                    <input id="sin" name="sin" title="Calculer le sinus de la valeur affich&eacute;e" type="button" value="sin" onclick="sinus();" />
+                    <div class="clear"></div>
+                    <input id="asin" name="asin" title="Calculer l'arcsinus de la valeur affich&eacute;e" type="button" value="asin" onclick="arcsinus();" />
+                    <input id="cos" title="Calculer  le cosinus de la valeur affich&eacute;e" name="cos" type="button" value="cos" onclick="cosinus();" />
+                    <input id="acos" name="acos" title="Calculer l'arccosinus de la valeur affich&eacute;e" type="button" value="acos" onclick="arccosinus();" />
+                    <input id="tan" name="tan" title="Calculer la tangente de la valeur affich&eacute;e" type="button" value="tan" onclick="tangente();" />
+                    <div class="clear"></div>
+                    <input id="atan" name="atan" title="calculer l'arctangente de la valeur affich&eacute;e" type="button" value="atan" onclick="arctangente();" />
+                    <input id="racin" name="racin" title="Calculer la racine carr&eacute;e de la valeur affich&eacute;e" type="button" value="&radic;" onclick="racine();" />
+                    <input id="pie" name="pie" title="Entrer pi(3,14159...)" type="button" value="&Pi;" onclick="pi();" />
+                    <input id="e" name="e" title="Entrer e (2,71828...)" type="button" value="e" onclick="ee();" />
+                    <div class="clear"></div>
+                    <input id="EE" name="EE" title="Notation exponentielle" type="button" value="EE" onclick="exp();" />
+                    <input id="ran" name="ran" title="Entrer un nombre al&eacute;atoire entre 0 et 1" type="button" value="Rand" onclick="rand();" />
+                </div>
+            </form>
+        </div>
+        <script src="calculator.js" type="text/javascript"></script>
+    </body>
+</html>

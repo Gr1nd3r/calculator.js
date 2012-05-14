@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus 
+{
+    outline: 0;
+}
+body 
+{
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul 
+{
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table 
+{
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td 
+{
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+    content: "";
+}
+blockquote, q 
+{
+    quotes: "" "";
+}
+#hide
+{
+    display: none;
+    position: relative;
+    top: -210px;
+    left: 205px;
+    float: left;
+}
+#hide input
+{
+    border-radius: 5px;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    background-color: #F0F0F0;
+    width: 45px;
+    border: outset 1px #969696;
+    height:24px; 
+}
+#calculette
+{
+    background-image: linear-gradient(bottom, rgb(200,200,200) 38%, rgb(200,200,200) 72%, rgb(250,250,250) 94%);
+    background-image: -o-linear-gradient(bottom, rgb(200,200,200) 38%, rgb(200,200,200) 72%, rgb(250,250,250) 94%);
+    background-image: -moz-linear-gradient(bottom, rgb(200,200,200) 38%, rgb(200,200,200) 72%, rgb(250,250,250) 94%);
+    background-image: -webkit-linear-gradient(bottom, rgb(200,200,200) 38%, rgb(200,200,200) 72%, rgb(250,250,250) 94%);
+    background-image: -ms-linear-gradient(bottom, rgb(200,200,200) 38%, rgb(200,200,200) 72%, rgb(250,250,250) 94%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.38, rgb(200,200,200)),
+        color-stop(0.72, rgb(200,200,200)),
+        color-stop(0.94, rgb(250,250,250))
+        );
+    border: outset 1px #969696;
+    border-radius: 5px 5px 5px 5px;
+    height: 260px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 206px;
+}
+textarea
+{
+    background-color: #E7EDD8;
+    border-radius: 5px;
+    text-align:right;
+    margin-left: 4px;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    width: 190px;
+    height: 43px;
+    border: inset 1px #969696;
+    resize: none;
+    font-size: 16px;
+    padding: 2px;
+}
+.bouton
+{
+    float:left;
+    padding:3px;
+}
+.bouton input
+{
+    background-color: #EFEFEF;
+    border: outset 1px #969696;
+    border-radius: 5px 5px 5px 5px;
+    height: 24px;
+    width: 45px;
+}
+#zero
+{
+    width:96px;
+}
+#egale
+{
+    height:54px;
+    position:relative;
+    bottom:30px;
+}
+.clear
+{
+    clear:both;
+}
